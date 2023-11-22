@@ -18,7 +18,7 @@ class PlacesScreen extends ConsumerWidget {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (ctx) => AddPlaceScreen(),
+                  builder: (ctx) => const AddPlaceScreen(),
                 ),
               );
             },
@@ -26,7 +26,10 @@ class PlacesScreen extends ConsumerWidget {
           ),
         ],
       ),
-      body: PlacesList(places: places),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: PlacesList(places: places),
+      ),
     );
   }
 }
