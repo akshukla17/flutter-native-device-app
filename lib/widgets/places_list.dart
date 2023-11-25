@@ -3,8 +3,8 @@ import 'package:favorite_places/screens/place_detail.dart';
 import 'package:flutter/material.dart';
 
 class PlacesList extends StatelessWidget {
-  PlacesList({super.key, required this.places});
-  List<Place> places;
+  const PlacesList({super.key, required this.places});
+  final List<Place> places;
 
   @override
   Widget build(BuildContext context) {
